@@ -17,6 +17,8 @@ public class Main {
         MyThreadPool myThreadPool = new MyThreadPool(2,4,1, TimeUnit.SECONDS,new ArrayBlockingQueue<>(2),new DiscardRejectHandle());
         for (int i = 0; i <8 ; i++) {
             final int fi = i;
+
+
             Runnable commend= ()->{
                 try {
                     Thread.sleep(1000);

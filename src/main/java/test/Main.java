@@ -20,6 +20,9 @@ public class Main {
 
 
 
+
+
+        
         for(int i=0;i<n;i++){
             List<Integer> list = new ArrayList<>();
             res+=begin[i];
