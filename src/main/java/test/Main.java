@@ -12,6 +12,7 @@ public class Main {
         int m = Integer.parseInt(st.nextToken());
         String a = br.readLine();
         String b = br.readLine();
+
         int[] begin = Arrays.stream(a.split("\\s+")).mapToInt(Integer::parseInt).toArray();
         int[] bottom = Arrays.stream(b.split("\\s+")).mapToInt(Integer::valueOf).toArray();
         PriorityQueue<List<Integer>> pq = new PriorityQueue<>((x,y)->y.get(1)-x.get(1));
