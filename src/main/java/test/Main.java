@@ -17,6 +17,7 @@ public class Main {
         int[] bottom = Arrays.stream(b.split("\\s+")).mapToInt(Integer::valueOf).toArray();
         PriorityQueue<List<Integer>> pq = new PriorityQueue<>((x,y)->y.get(1)-x.get(1));
         int res = 0;
+
         for(int i=0;i<n;i++){
             List<Integer> list = new ArrayList<>();
             res+=begin[i];
