@@ -71,6 +71,7 @@ public class huawei2 {
                     if(curdepth%2==1){
                         oddflipcount++;
                     }
+                    int a = 1;
                     else{
                         evenflipcount++;
                     }
