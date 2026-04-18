@@ -19,6 +19,7 @@ public class Main {
         int res = 0;
 
 
+
         for(int i=0;i<n;i++){
             List<Integer> list = new ArrayList<>();
             res+=begin[i];
@@ -36,6 +37,7 @@ public class Main {
             int diff = begin[index] - Math.max((begin[index]+1)/2,bottom[index]);
             list.remove(1);
             list.add(diff);
+
             pq.offer(list);
 
         }
